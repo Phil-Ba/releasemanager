@@ -1,0 +1,11 @@
+spring:
+  liquibase:
+    change-log: db/changelog/changelog-01.xml
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  datasource:
+    url: jdbc:postgresql://releasemanager-db:5432/releasemanager
+    username: postgres
+    password: releasemanager
